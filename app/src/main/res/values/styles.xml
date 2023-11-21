@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Definindo o estilo personalizado do texto -->
+    <style name="CustomTextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#8D000000</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">italic</item>
+        <!-- Outros atributos de estilo que você desejar -->
+    </style>
+
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+</resources>

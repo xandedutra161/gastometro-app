@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Conteúdo da caixa de diálogo -->
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atenção"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/dialog_message_exclusion"
+        android:gravity="center" />
+
+    <!-- Botões -->
+    <Button
+        android:id="@+id/btnCurrent"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atual"
+        android:textColor="@color/backgroundColor"
+        android:onClick="onButton1Click" />
+
+    <Button
+        android:id="@+id/btnAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Todas"
+        android:textColor="@color/backgroundColor"
+        android:onClick="onButton2Click" />
+
+    <Button
+        android:id="@+id/btnCurrentAndNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atual e próximas"
+        android:textColor="@color/backgroundColor"
+        android:onClick="onButton3Click" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:textColor="@color/blue"
+        android:backgroundTint="@color/backgroundColor"
+        android:onClick="onCancelClick" />
+
+</LinearLayout>

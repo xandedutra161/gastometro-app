@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/registerCategoryFragment"
+        android:name="com.gastometro.despesa.ui.features.category.register.RegisterCategoryFragment"
+        android:label="RegisterCategoryFragment"
+        tools:layout="@layout/fragment_register_category">
+        <argument
+            android:name="category"
+            android:defaultValue="@null"
+            app:argType="com.gastometro.despesa.data.model.Category"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listCategoryFragment"
+        android:name="com.gastometro.despesa.ui.features.category.list.ListCategoryFragment"
+        android:label="ListCategoryFragment"
+        tools:layout="@layout/fragment_list_category">
+        <action
+            android:id="@+id/action_listCategoryFragment_to_registerCategoryFragment"
+            app:destination="@id/registerCategoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.gastometro.despesa.ui.features.movement.list.MovementFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_movement">
+        <argument
+            android:name="month"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_homeFragment_to_registerMovementFragment"
+            app:destination="@id/registerMovementFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="com.gastometro.despesa.ui.features.pay.list.PayFragment"
+        android:label="PayFragment"
+        tools:layout="@layout/fragment_pay">
+        <action
+            android:id="@+id/action_payFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <argument
+            android:name="stringPay"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/graphicFragment"
+        android:name="com.gastometro.despesa.ui.features.graphic.GraphicFragment"
+        android:label="GraphicFragment"
+        tools:layout="@layout/fragment_graphic"></fragment>
+
+    <fragment
+        android:id="@+id/registerMovementFragment"
+        android:name="com.gastometro.despesa.ui.features.movement.register.RegisterMovementFragment"
+        android:label="RegisterMovementFragment"
+        tools:layout="@layout/fragment_register_movement">
+        <argument
+            android:name="movement"
+            android:defaultValue="@null"
+            app:argType="com.gastometro.despesa.data.model.Movement"
+            app:nullable="true" />
+        <argument
+            android:name="month"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_registerMovementFragment_to_selectCategory"
+            app:destination="@id/selectCategory" />
+        <action
+            android:id="@+id/action_registerMovementFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectCategory"
+        android:name="com.gastometro.despesa.ui.features.movement.register.BottomSheetCategoriesFragment"
+        android:label="SelectCategory"
+        tools:layout="@layout/bottom_sheet_category"></fragment>
+
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.gastometro.despesa.ui.features.pay.list.PaymentFragment"
+        android:label="PaymentFragment"
+        tools:layout="@layout/fragment_payment">
+        <action
+            android:id="@+id/action_paymentFragment_to_payFragment"
+            app:destination="@id/payFragment" />
+        <argument
+            android:name="stringPayment"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+
+    </fragment>
+
+
+</navigation>

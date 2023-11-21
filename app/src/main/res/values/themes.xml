@@ -1,0 +1,18 @@
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.Fab_Bottom_app_bar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorOnPrimary">@color/blue</item>
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorPrimary">@color/blue</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+
+
+</resources>

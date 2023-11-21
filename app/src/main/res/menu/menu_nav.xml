@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/payFragment"
+        android:icon="@drawable/outline_paid_24"
+        android:title="Pagar" />
+
+    <item
+        android:id="@+id/placeholder"
+        android:title="" />
+
+    <item
+        android:id="@+id/graphicFragment"
+        android:icon="@drawable/baseline_pie_chart_outline_24"
+        android:title="Grafico" />
+
+    <item
+        android:id="@+id/listCategoryFragment"
+        android:icon="@drawable/ic_category"
+        android:title="Categorias" />
+
+</menu>

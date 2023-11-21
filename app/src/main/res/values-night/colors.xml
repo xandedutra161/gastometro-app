@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundColor">#151515</color>
+    <color name="fontColor">#f9f9f9</color>
+    <color name="red">#F94646</color>
+    <color name="green">#126A00</color>
+    <color name="blue">#2A9ECF</color>
+    <color name="purple">#4A148C</color>
+    <color name="orange">#D75413</color>
+    <color name="backgroundColorDark">#09566A</color>
+
+    <color name="background_paid">#175117</color>
+
+    <color name="purple_200">#DDFDDD</color>
+    <color name="purple_500">#CAF1CC</color>
+    <color name="purple_700">#007C05</color>
+    <color name="teal_200">#09980F</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="transparent_color">#00000000</color>
+    <color name="lavender">#34353A</color>
+    <color name="text_weak">#9AFFFFFF</color>
+</resources>

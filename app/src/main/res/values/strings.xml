@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Gastometro</string>
+    <string name="tv_item_category">Alimentação</string>
+    <string name="category">Categoria</string>
+    <string name="explain_ib_category">Voltar para tela anterior</string>
+    <string name="tv_empty_text">Vazio.</string>
+
+    <string name="message_delete_category">Deletado com Sucesso!</string>
+    <string name="message_register_category">Categoria Cadastrada com Sucesso!</string>
+    <string name="message_update_category">Alterado com Sucesso!</string>
+    <string name="message_error_save_data">Erro, não foi cadastro no banco!</string>
+    <string name="message_duplicate_category">Erro, já existe categoria com este nome!</string>
+
+    <string name="titleRegisterCategory">Cadastro de Categoria</string>
+    <string name="labelNameCategory">Nome da Categoria</string>
+    <string name="hintNameCategory">Digite uma categoria...</string>
+
+    <string name="titleRegisterMovement">Cadastro de Movimentações</string>
+    <string name="labelAmount">Valor</string>
+    <string name="labelDate">Data da Movimentação</string>
+    <string name="hintAmount">Valor</string>
+    <string name="hintDescription">Descrição da Despesa</string>
+    <string name="hintDate">Vencimento</string>
+
+    <string name="changeBtnSave">Atualizar</string>
+    <string name="required">Requerido</string>
+    <string name="description_btn_editar">Botão Editar</string>
+
+    <string name="message_register_movement">Movimentação Cadastrada com Sucesso!</string>
+    <string name="message_update_movement">Movimentação Atualizada com Sucesso!</string>
+    <string name="pay">Pagar</string>
+
+    <string-array name="months">
+        <item>Janeiro</item>
+        <item>Fevereiro</item>
+        <item>Março</item>
+        <item>Abril</item>
+        <item>Maio</item>
+        <item>Junho</item>
+        <item>Julho</item>
+        <item>Agosto</item>
+        <item>Setembro</item>
+        <item>Outubro</item>
+        <item>Novembro</item>
+        <item>Dezembro</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_payment">O processo de pagamento foi finalizado com êxito. Se você realizou algum pagamento incorretamente, basta retornar à página inicial e selecionar a transação desejada para efetuar as correções necessárias.</string>
+    <string name="empt_graphic">Vazio (R$ 0,00)</string>
+    <string name="other_category">\"Outras\"</string>
+    <string name="category_others">Outras</string>
+    <string name="dialog_message_exclusion">Esta movimentação se repete em diferentes datas. Selecione a que deve ser removida.</string>
+    <string name="dialog_message_update">Esta movimentação se repete em diferentes datas. Selecione a que deve ser atualizada.</string>
+    <string name="select_category">Selecionar Categoria</string>
+    <string name="channel_name">test</string>
+    <string name="channel_description">teste description</string>
+    <string name="msg_notification">Verifique suas despesas; há despesas pendentes.</string>
+</resources>
